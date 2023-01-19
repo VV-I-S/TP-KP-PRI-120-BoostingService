@@ -60,7 +60,7 @@ const UserProfile = () => {
     return (
         <div className={style.wrapper}>
                 <input type="email"
-                    className={style.input}
+                    className={style.forinputs}
                     placeholder={"E-mail"}
                     autoComplete={"off"}
                     value={emailForBlock}

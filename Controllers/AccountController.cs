@@ -42,7 +42,7 @@ namespace BoostingService.Controllers
         [HttpPost("login")]
         public string login(LoginModel model)
         {
-            var role = _context.Users.Where(a => a.email == model.logEmail && a.password == model.logPassword).ToList();
+            var role = _context.Users.Where(a => a.email == model.logEmail && a.password == model.logPassword && a.role != "block").ToList();
             return role.Count != 0 ? role.Last().role : "err";
         }
 

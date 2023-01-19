@@ -160,7 +160,7 @@ export default function Service() {
                         <div className={style.forDisplay1}>
                             <label htmlFor="mmrnow">Текущий ММР: </label>
                             <input
-                                className={style.input}
+                                className={style.ininput}
                                 type="text"
                                 id="mmrnow"
                                 placeholder={"0"}
@@ -203,7 +203,7 @@ export default function Service() {
                         <h5>{5 * (Math.trunc(width / 1000) + 1)}-{5 * (Math.trunc(width / 1000) + 1) + 3} дней </h5>
                     </div>
                     {isAuth
-                        ? <button type="submit" className={style.submit}>Оформить заказ1</button>
+                        ? <button type="submit" className={style.submit}>Оформить заказ</button>
                         : <AuthButton />}
                 </form>
             </div>
@@ -215,7 +215,7 @@ export default function Service() {
                         <div className={style.forDisplay1}>
                             <label htmlFor="lastmmr">Предыдущий ММР: </label>
                             <input
-                                className={style.input}
+                                className={style.ininput}
                                 type="text"
                                 id="mmrnow"
                                 placeholder={"0"}
@@ -238,7 +238,7 @@ export default function Service() {
                         <h5>от 1 до 3 дней</h5>
                     </div>
                     {isAuth
-                        ? <button type="submit" className={style.submit}>Оформить заказ2</button>
+                        ? <button type="submit" className={style.submit}>Оформить заказ</button>
                         : <AuthButton />}
                 </form>
             </div>

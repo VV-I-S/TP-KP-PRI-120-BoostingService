@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using BoostingService.Models.ViewModel;
 using BoostingService.Models;
 using BoostingService.Context;
@@ -35,7 +33,7 @@ namespace BoostingService.Controllers
                 startMMR = viewOrder.startMMR,
                 endMMR = viewOrder.endMMR,
                 countLP = viewOrder.countLP,
-                cost = viewOrder.cost,
+                cost = (int)viewOrder.cost,
                 status = "Ожидает подтверждения",
                 dateOfCreate = DateTime.Now
             };
